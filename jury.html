@@ -1,0 +1,114 @@
+
+
+<!-- Page Jury — 100% Bootstrap + Font Awesome, compatible Moodle 4.5, sans CSS externe -->
+
+<div class="container my-5">
+  <!-- En-tête + bouton retour -->
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0">
+      <i class="fas fa-users-rectangle me-2"></i>Jury des Trophées de l’Entrepreneuriat à Impact
+    </h1>
+    <a href="#" class="btn btn-outline-secondary btn-sm">
+      <i class="fas fa-arrow-left me-1"></i> Retour à l’accueil
+    </a>
+  </div>
+
+  <!-- Intro -->
+  <div class="p-4 rounded-4 shadow-sm text-center mb-4" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+    <p class="mb-0 text-muted">
+      Découvrez les membres du jury. Leur expertise croise entrepreneuriat, innovation, académie et impact durable.
+    </p>
+  </div>
+
+  <!-- Grille Jury -->
+  <div class="row g-4" id="juryGrid">
+    <!-- Membre 1 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm jury-card" style="transition: transform .2s ease, box-shadow .2s ease; opacity: 0; transform: translateY(8px);">
+        <div class="ratio ratio-1x1">
+          <img src="https://via.placeholder.com/800x800?text=Photo" class="card-img-top" alt="Photo - Membre du jury 1" loading="lazy" style="object-fit: cover;">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-1">Nom Prénom 1</h5>
+          <p class="text-muted mb-2"><i class="fas fa-briefcase me-1"></i> Fonction / Organisation</p>
+          <span class="badge bg-success-subtle text-success border border-success"><i class="fas fa-user-tie me-1"></i> Titre / Expertise</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Membre 2 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm jury-card" style="transition: transform .2s ease, box-shadow .2s ease; opacity: 0; transform: translateY(8px);">
+        <div class="ratio ratio-1x1">
+          <img src="https://via.placeholder.com/800x800?text=Photo" class="card-img-top" alt="Photo - Membre du jury 2" loading="lazy" style="object-fit: cover;">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-1">Nom Prénom 2</h5>
+          <p class="text-muted mb-2"><i class="fas fa-briefcase me-1"></i> Fonction / Organisation</p>
+          <span class="badge bg-primary-subtle text-primary border border-primary"><i class="fas fa-flask me-1"></i> Titre / Expertise</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Membre 3 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm jury-card" style="transition: transform .2s ease, box-shadow .2s ease; opacity: 0; transform: translateY(8px);">
+        <div class="ratio ratio-1x1">
+          <img src="https://via.placeholder.com/800x800?text=Photo" class="card-img-top" alt="Photo - Membre du jury 3" loading="lazy" style="object-fit: cover;">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-1">Nom Prénom 3</h5>
+          <p class="text-muted mb-2"><i class="fas fa-briefcase me-1"></i> Fonction / Organisation</p>
+          <span class="badge bg-warning-subtle text-warning border border-warning"><i class="fas fa-seedling me-1"></i> Titre / Expertise</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Membre 4 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm jury-card" style="transition: transform .2s ease, box-shadow .2s ease; opacity: 0; transform: translateY(8px);">
+        <div class="ratio ratio-1x1">
+          <img src="https://via.placeholder.com/800x800?text=Photo" class="card-img-top" alt="Photo - Membre du jury 4" loading="lazy" style="object-fit: cover;">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-1">Nom Prénom 4</h5>
+          <p class="text-muted mb-2"><i class="fas fa-briefcase me-1"></i> Fonction / Organisation</p>
+          <span class="badge bg-info-subtle text-info border border-info"><i class="fas fa-graduation-cap me-1"></i> Titre / Expertise</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bouton retour bas de page -->
+  <div class="text-center mt-5">
+    <a href="#" class="btn btn-outline-secondary btn-lg">
+      <i class="fas fa-arrow-left me-2"></i>Retour à l’accueil
+    </a>
+  </div>
+</div>
+
+<!-- Micro-animations: apparition progressive + hover lift (sans CSS externe) -->
+<script>
+  // Apparition séquentielle des cartes
+  (function() {
+    var cards = document.querySelectorAll('.jury-card');
+    cards.forEach(function(card, i) {
+      setTimeout(function() {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }, 120 * i);
+      // Effet hover (élévation + ombre)
+      card.addEventListener('mouseenter', function() {
+        card.classList.add('shadow-lg');
+        card.style.transform = 'translateY(-4px)';
+      });
+      card.addEventListener('mouseleave', function() {
+        card.classList.remove('shadow-lg');
+        card.style.transform = 'translateY(0)';
+      });
+    });
+  })();
+</script>
+
+<!-- Astuce : remplacez les URLs des images par vos photos (carrées de préférence).
+     Si vos images ne sont pas carrées, conservez 'ratio-1x1' + 'object-fit:cover' pour un cadrage propre. -->

@@ -1,4 +1,4 @@
-© Centrale Lille Institut, 2025. Tous droits réservés sur les contenus (textes, logos, images).
+© Équipe organisatrice, 2025. Tous droits réservés sur les contenus (textes, logos, images).
 
 Le code HTML, JavaScript et la mise en forme graphique (hors logos et images) sont diffusés sous licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0).
 
